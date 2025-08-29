@@ -1,3 +1,5 @@
+package exception;
+
 import java.util.Scanner;
 
 public class QuotientWithException {
@@ -25,6 +27,7 @@ public class QuotientWithException {
         catch (ArithmeticException ex) {
             System.out.println("Exception: an integer " +
                     "cannot be divided by zero ");
+            System.out.println(ex.getCause());
         }
 
         System.out.println("Execution continues ...");
